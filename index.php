@@ -50,23 +50,7 @@ $rootUrl = "/ts/";    // Development environment
 </head>
 <body>
   <div id="wrapper" class="container-fluid">
-    <!-- Search Modal -->
-    <div class="modal fade" id="modalLoad" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span>&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Search Interests</h4>
-          </div>
-          <div class="modal-body">
-            <input type="text" class="form-control" id="inpSrch" placeholder="Search Topic">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="overlay"></div>
     <!-- Sidebar -->
     <div id="sidebar-wrapper" class="hdn">
       <ul class="sidebar-nav">
@@ -90,5 +74,22 @@ $rootUrl = "/ts/";    // Development environment
     <!-- /#sidebar-wrapper -->
   </div>
   <!-- /#wrapper -->
+  <!-- Search Modal -->
+    <div class="modal fade" id="modalLoad" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span>&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Search Interests</h4>
+          </div>
+          <div class="modal-body">
+            <input type="text" class="form-control" id="inpSrch" placeholder="Search Topic">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
