@@ -80,13 +80,17 @@ $rootUrl = "/ts/";    // Development environment
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span>&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Search Interests</h4>
+            <h4 class="modal-title" id="myModalLabel">Add your interests</h4>
           </div>
           <div class="modal-body">
-            <input type="text" class="form-control" id="inpSrch" placeholder="Search Topic">
+            <input type="text" class="form-control" id="inpSrch" placeholder="Search">
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <!-- Added tags are displayed here
+                or use recommend auto complete tags here 
+               -> Add continue button to accept chosen tag(min of 1) to continue
+          -->
+            <button id="btnCont" class="hdn">Continue</button>
           </div>
         </div>
       </div>
