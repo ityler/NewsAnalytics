@@ -80,10 +80,13 @@ $rootUrl = "/ts/";    // Development environment
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span>&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Add your interests</h4>
+            <p class="modal-hdr">Technology News</p>
+            <p class="modal-title lead" id="myModalLabel">To start, enter a few topics you're interested in</p>
           </div>
           <div class="modal-body">
-            <input type="text" class="form-control" id="inpSrch" placeholder="Search">
+            <form class="" role="keywords">
+              <input type="text" class="form-control" id="inpSrch" placeholder="Search">
+            </form>
           </div>
           <div class="modal-footer">
           <!-- Added tags are displayed here
