@@ -85,14 +85,15 @@ $rootUrl = "/ts/";    // Development environment
           </div>
           <div class="modal-body">
             <form class="" role="keywords">
-              <input type="text" class="form-control" id="inpSrch" placeholder="Search">
+              <input type="text" class="form-control" id="inpSrch" autocomplete="off" placeholder="Search">
             </form>
           </div>
           <div class="modal-footer">
           <!-- Added tags are displayed here
-                or use recommend auto complete tags here 
-               -> Add continue button to accept chosen tag(min of 1) to continue
-          -->
+                or use recommend typeahead tags here
+                -> Create typeahead tags as bubble wells listed below search bar 
+              - Show list of current popular tags (most popular keyword in 1-3 days)
+          --> 
             <button id="btnCont" class="hdn">Continue</button>
           </div>
         </div>
