@@ -20,10 +20,12 @@ $rootUrl = "/ts/";    // Development environment
   <link rel="stylesheet" href="<?php echo $rootUrl ?>assets/css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="<?php echo $rootUrl ?>assets/css/simple-sidebar.css" type="text/css">
   <link rel="stylesheet" href="<?php echo $rootUrl ?>assets/css/styles.css" type="text/css">
+  <link rel="stylesheet" href="<?php echo $rootUrl ?>assets/css/tt.css" type="text/css">
   <script src="<?php echo $rootUrl ?>assets/js/jquery-1.12.2.min.js"></script>
   <script src="<?php echo $rootUrl ?>assets/js/masonry.pkgd.min.js"></script>
   <script src="<?php echo $rootUrl ?>assets/js/bootstrap.min.js"></script>
-  <script src="<?php echo $rootUrl ?>assets/js/tchscpr.js"></script>
+  <script src="<?php echo $rootUrl ?>assets/js/typeahead.js"></script>
+  
   <!--
   <script src="http://techscoopr.com/assets/js/jquery-ui.min.js"></script>
   <script src="http://techscoopr.com/assets/js/bootstrap.min.js"></script>
@@ -85,7 +87,7 @@ $rootUrl = "/ts/";    // Development environment
           </div>
           <div class="modal-body">
             <form class="" role="keywords">
-              <input type="text" class="form-control" id="inpSrch" autocomplete="off" placeholder="Search">
+              <input type="text" class="form-control typeahead" id="inpSrch" placeholder="Search">
             </form>
           </div>
           <div class="modal-footer">
@@ -99,5 +101,6 @@ $rootUrl = "/ts/";    // Development environment
         </div>
       </div>
     </div>
+    <script src="<?php echo $rootUrl ?>assets/js/tchscpr.js"></script>
 </body>
 </html>

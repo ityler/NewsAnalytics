@@ -1,8 +1,11 @@
 $(document).ready(function () {
   $('#modalLoad').modal('show');
   $('#inpSrch.typeahead').typeahead({
-        name: 'tags',
-        prefetch: 'data/countries.json',
-        limit: 10
+        name: 'Tags',
+        hint: 'true',
+        highlight: 'true',
+        source: 'sys/tags.json',
+        minLength: 1
     });
+  $('.tt-query').css('background-color','#fff');  
 });
